@@ -3,8 +3,10 @@ Open AQ Kit was an SDK written to simplify the process of interacting with [Open
 
 ## Requirements
 * Swift 4
-* iOS 10.0+
+* iOS 11.0+
 * macOS 10.13+
+* watchOS 4.0+
+* tvOS 11.0+
 
 ## Installation
 ### Swift Package Manager

@@ -66,10 +66,10 @@ Obtain air quality data with ease! This SDK allows you to seemlessly integrate t
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "11.0"
   s.osx.deployment_target = "10.13"
-  s.watchos.deployment_target = "3.0"
-  s.tvos.deployment_target = "9.0"
+  s.watchos.deployment_target = "4.0"
+  s.tvos.deployment_target = "11.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -78,7 +78,7 @@ Obtain air quality data with ease! This SDK allows you to seemlessly integrate t
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/hyerra/OpenAQKit/tree/master/Sources/OpenAQKit", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/hyerra/OpenAQKit.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,10 +89,10 @@ Obtain air quality data with ease! This SDK allows you to seemlessly integrate t
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Sources", "Sources/**/*.{h,m}", "Sources/OpenAQKit/*.swift", "Sources/OpenAQKit/Model/*.swift"
+  s.exclude_files = "Sources/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "Sources/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
