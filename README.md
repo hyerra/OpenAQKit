@@ -16,8 +16,18 @@ Once you have your Swift package set up, adding OpenAQKit as a dependency is as 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/hyerra/OpenAQKit.git", from: "1.0.1")
+    .package(url: "https://github.com/hyerra/OpenAQKit.git", from: "1.1.2")
 ]
+```
+### CocoaPods
+CocoaPods is a dependency manager for Cocoa projects. You can add it to your project like so:
+```ruby
+platform :ios, '11.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'OpenAQKit'
+end
 ```
 ## Usage
 Requests to Open AQ can be requested by using the `OpenAQClient` class like so:
