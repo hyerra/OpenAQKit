@@ -20,6 +20,8 @@ public struct CitiesParameters: OpenAQParameters {
     /// The page you are on for result pagination.
     public var page: Int?
     
+    public init() { }
+    
     /// Represents the method to order results by.
     public enum OrderBy: String, Encodable {
         case city
@@ -57,6 +59,8 @@ public struct CountriesParameters: OpenAQParameters {
     /// The page you are on for result pagination.
     public var page: Int?
     
+    public init() { }
+    
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
         case isoCode = "code"
@@ -93,6 +97,8 @@ public struct FetchParameters: OpenAQParameters {
     public var limit: Int?
     /// The page you are on for result pagination.
     public var page: Int?
+    
+    public init() { }
     
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
@@ -142,6 +148,8 @@ public struct LatestAQParameters: OpenAQParameters {
     public var limit: Int?
     /// The page you are on for result pagination.
     public var page: Int?
+    
+    public init() { }
     
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
@@ -216,6 +224,8 @@ public struct LocationsParameters: OpenAQParameters {
     public var limit: Int?
     /// The page you are on for result pagination.
     public var page: Int?
+    
+    public init() { }
     
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
@@ -309,6 +319,8 @@ public struct MeasurementsParameters: OpenAQParameters {
     /// The format to return the results in.
     public var format: Format?
     
+    public init() { }
+    
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
         case date
@@ -388,8 +400,12 @@ public struct MeasurementsParameters: OpenAQParameters {
 
 /// Represents the parameters that can be used to fetch a simple listing of parameters within the Open AQ.
 public struct ParameterParameters: OpenAQParameters {
+    /// The method to order results by.
     public var orderBy: OrderBy?
+    /// The method to sort results by.
     public var sort: SortOrder?
+    
+    public init() { }
     
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
@@ -415,10 +431,16 @@ public struct ParameterParameters: OpenAQParameters {
 
 /// Represents the parameters that can be used to fetch a list of data sources.
 public struct SourcesParameters: OpenAQParameters {
+    /// The method to order results by.
     public var orderBy: OrderBy?
+    /// The method to sort results by.
     public var sort: SortOrder?
+    /// The maximum results that can be returned.
     public var limit: Int?
+    /// The page you are on for result pagination.
     public var page: Int?
+    
+    public init() { }
     
     /// Represents the field to order results by.
     public enum OrderBy: String, Encodable {
