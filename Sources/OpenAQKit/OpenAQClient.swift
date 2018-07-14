@@ -4,7 +4,7 @@ import Foundation
 public class OpenAQClient: APIClient {
     
     /// Returns a `shared` singleton Open AQ Client object.
-    static let shared = OpenAQClient()
+    public static let shared = OpenAQClient()
     
     /// Returns a new instance of Open AQ Client.
     public init() { }
