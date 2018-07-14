@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenAQKit"
-  s.version      = "1.0.5"
+  s.version      = "1.1.0"
   s.summary      = "A well written SDK that allows you to interact with the Open AQ API (http://openaq.org) and obtain air quality data with ease."
 
   # This description is used to generate tags and improve search results.
