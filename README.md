@@ -1,5 +1,5 @@
 # OpenAQKit
-Open AQ Kit was an SDK written to simplify the process of interacting with [OpenAQ](openaq.org). This SDK lets you easily fetch air quality data for more than 60+ countries.
+Open AQ Kit was an SDK written to simplify the process of interacting with [OpenAQ](http://www.openaq.org). This SDK lets you easily fetch air quality data for more than 60+ countries.
 
 ## Requirements
 * Swift 4
